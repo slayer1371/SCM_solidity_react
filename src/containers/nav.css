@@ -1,0 +1,16 @@
+.edit {
+    font-size: 16px;
+    font-family: 'Raleway';
+    margin: 0;
+    border-radius: 0;
+}
+
+.test{
+    height: 60px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+
