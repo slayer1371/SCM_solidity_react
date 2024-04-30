@@ -1,5 +1,8 @@
 import { useState , useEffect} from "react";
 import { Supplychain } from "../web3/connectmeta";
+import Navigationn from "../components/navigation";
+import { Card } from "react-bootstrap";
+import './man.css'
 
 const Customerpage = () => {
   const [customers, setCustomers] = useState([]);
@@ -12,7 +15,6 @@ const Customerpage = () => {
         setCustomers(customers);
       } catch (error) {
         console.error("Error:", error);
-        // Handle error on the frontend
       }
     };
 
@@ -21,12 +23,25 @@ const Customerpage = () => {
 
   return (
     <div>
-      <h1>Customers registered in the contract</h1>
-      <ul>
+      <Navigationn />
+      <div className="main">
+      <div className="two">
+      <h1><u>Customers registered in the contract</u></h1>
+      </div>
+      <div className="one">
         {customers.map((customer, index) => (
-          <li key={index}>Name - {customer.name} address - {customer.customer}</li>
+          <Card bg={'light'} text={'bg'==='light'?'white':'dark'} style={{ width: '28rem' }}>
+            <Card.Img variant="top"  style={{"border-image":"10px"}}/>
+            <Card.Body>
+              <Card.Title style={{"fontSize":"14px"}}><b>Name </b>- {customer.name}</Card.Title>
+              <Card.Text>
+                <b>Metamask Wallet Address</b> - {customer.customer}
+              </Card.Text>
+            </Card.Body>
+            </Card>
         ))}
-      </ul>
+      </div>
+    </div>
     </div>
   );
 };

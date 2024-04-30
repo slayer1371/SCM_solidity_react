@@ -17,19 +17,31 @@ function Navigationn() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="http://localhost:3000/home">Home</Nav.Link>
-            <Nav.Link style={{"paddingLeft":"35px"}} href="http://localhost:3000/login">About Us</Nav.Link>
-            <Nav.Link style={{"paddingLeft":"35px"}} href="http://localhost:3000/home">Services</Nav.Link>
-            <Nav.Link style={{"paddingLeft":"35px"}} href="http://localhost:3000/home">Team</Nav.Link>
-            <Nav.Link style={{"paddingLeft":"35px"}} href="http://localhost:3000/home">Contact</Nav.Link>
-            <NavDropdown style={{"paddingLeft":"35px"}} title="Services" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
+            <Nav.Link href="http://localhost:3000">Home</Nav.Link>
+            <Nav.Link style={{"paddingLeft":"35px"}} href="http://localhost:3000/#about">About Us</Nav.Link>
+            <Nav.Link style={{"paddingLeft":"35px"}} href="http://localhost:3000/#services">Services</Nav.Link>
+            <Nav.Link style={{"paddingLeft":"35px"}} href="http://localhost:3000/#team">Team</Nav.Link>
+            <Nav.Link style={{"paddingLeft":"35px","paddingRight":"35px"}} href="http://localhost:3000/#contact">Contact</Nav.Link>
+            <NavDropdown title="Services" id="navbarScrollingDropdown">
+            <NavDropdown.Item style={{"fontSize":"14px"}} href="http://localhost:3000/login">Login</NavDropdown.Item>
+              <NavDropdown.Item style={{"fontSize":"14px"}} href="http://localhost:3000/updatestate_manufacturer">
+                Update State By Manufacturers
+              </NavDropdown.Item>
+              <NavDropdown.Item style={{"fontSize":"14px"}} href="http://localhost:3000/updatestate_distributor">
+                Update State By Distributors
+              </NavDropdown.Item>
+              <NavDropdown.Item style={{"fontSize":"14px"}} href="http://localhost:3000/updatestate_retailer">
+                Update State by Retailers
+              </NavDropdown.Item>
+              <NavDropdown.Item style={{"fontSize":"14px"}} href="http://localhost:3000/updatestate_customer">
+                Update State by Customers
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
+              <NavDropdown.Item style={{"fontSize":"14px"}} href="http://localhost:3000/addproduct">
+                Add Product
+              </NavDropdown.Item>
+              <NavDropdown.Item style={{"fontSize":"14px"}} href="http://localhost:3000/current">
+                View Product Status
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

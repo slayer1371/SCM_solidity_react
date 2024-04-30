@@ -115,7 +115,7 @@ export const Metamaskconnect = () => {
       <NavScrollExample />
       <Container
         fluid
-        style={{ display: "flex", justifyContent: "space-between", "fontSize":"15px"}}
+        style={{ display: "flex", justifyContent: "space-between", "fontSize":"14px"}}
       >
         <Card style={{ width: "30rem" }}>
           <Card.Img
@@ -148,6 +148,7 @@ export const Metamaskconnect = () => {
               placeholder="Manufacturer's Name"
               value={manufacturerValue}
               onChange={handlemanuInputChange}
+              style={{"width":"100%","height":"35px"}}
             />
             <br />
             <br />
@@ -170,6 +171,7 @@ export const Metamaskconnect = () => {
               placeholder="Distributor's Name"
               value={distributorValue}
               onChange={handledistribInputChange}
+              style={{"width":"100%","height":"35px"}}
             />
             <br />
             <br />
@@ -192,6 +194,7 @@ export const Metamaskconnect = () => {
               placeholder="Retailer's Name"
               value={retailerValue}
               onChange={handleretInputChange}
+              style={{"width":"100%","height":"35px"}}
             />
             <br />
             <br />
@@ -214,6 +217,7 @@ export const Metamaskconnect = () => {
               placeholder="Customer's Name"
               value={customerValue}
               onChange={handlecustInputChange}
+              style={{"width":"100%","height":"35px"}}
             />
             <br />
             <br />

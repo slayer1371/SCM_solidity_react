@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./layout";
 import Customerpage from "./entities/customerpage";
@@ -8,7 +7,10 @@ import Retailerpage from "./entities/retailerpage";
 import Product from "./web3/addproduct";
 import Viewproductbyid from "./web3/viewproductbyid";
 import ViewCurrentState from "./web3/currentstae";
-import UpdateStateByManufacturer from "./web3/updatestate";
+import UpdateStateByManufacturer from "./web3/updatestate/manufacturer";
+import UpdateStateByCustomer from "./web3/updatestate/customer";
+import UpdateStateByDistributor from "./web3/updatestate/distributor";
+import UpdateStateByRetailer from "./web3/updatestate/retailer";
 import GridExample from "./containers/cardgrid";
 import Metamaskconnect from "./web3/login";
 
@@ -27,7 +29,10 @@ const App = () => {
         <Route path="/addproduct" element={<Product />}></Route>
         <Route path="viewproduct" element={<Viewproductbyid />}></Route>
         <Route path="/current" element={<ViewCurrentState />}></Route>
-        <Route path="/updatestate" element={<UpdateStateByManufacturer />}></Route>
+        <Route path="/updatestate_manufacturer" element={<UpdateStateByManufacturer />}></Route>
+        <Route path="/updatestate_distributor" element={<UpdateStateByDistributor />}></Route>
+        <Route path="/updatestate_retailer" element={<UpdateStateByRetailer />}></Route>
+        <Route path="/updatestate_customer" element={<UpdateStateByCustomer />}></Route>
       </Routes>
     </BrowserRouter>
   );
