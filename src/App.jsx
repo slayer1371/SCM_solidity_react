@@ -6,12 +6,12 @@ import Manufacturerpage from "./entities/manufacturerpage";
 import Retailerpage from "./entities/retailerpage";
 import Product from "./web3/addproduct";
 import Viewproductbyid from "./web3/viewproductbyid";
-import ViewCurrentState from "./web3/currentstae";
+import ViewCurrentState from "./web3/currentstate";
 import UpdateStateByManufacturer from "./web3/updatestate/manufacturer";
 import UpdateStateByCustomer from "./web3/updatestate/customer";
 import UpdateStateByDistributor from "./web3/updatestate/distributor";
 import UpdateStateByRetailer from "./web3/updatestate/retailer";
-import GridExample from "./containers/cardgrid";
+import ProductPage from "./containers/cardgrid";
 import Metamaskconnect from "./web3/login";
 
 
@@ -20,7 +20,7 @@ const App = () => {
 <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}></Route>
-        <Route path="/products" element={<GridExample />}></Route>
+        <Route path="/products" element={<ProductPage />}></Route>
         <Route path = "/login" element ={<Metamaskconnect />}></Route>
         <Route path="/manufacturers" element={<Manufacturerpage />}></Route>
         <Route path="/customers" element={<Customerpage />}></Route>

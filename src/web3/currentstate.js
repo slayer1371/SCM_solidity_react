@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Supplychain } from './connectmeta';
+import Navigationn from '../containers/nav';
 
 export const states = ["Manufactured",
         "Product Purchased by a Distributor",
@@ -32,6 +33,7 @@ const ViewCurrentState = () => {
 
 return (
     <div>
+      <Navigationn />
         <h2>View Current State</h2>
         <div>
             <label htmlFor="productId">Product ID:</label>

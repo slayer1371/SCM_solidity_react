@@ -16,7 +16,7 @@
         "name": "AddDistributor",
         "type": "event"
     },
-    {
+    { 
         "anonymous": false,
         "inputs": [],
         "name": "AddManufacturer",

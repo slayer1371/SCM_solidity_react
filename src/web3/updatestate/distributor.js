@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connectWallet,Supplychain } from '../connectmeta';
 import Navigationn from '../../components/navigation';
+import ApproveVerification from './verification';
 
 const UpdateStateDist= () => {
   const [productId, setProductId] = useState('');
@@ -23,7 +24,7 @@ const UpdateStateDist= () => {
   const updateState = async () => {
     try {
       const walletResponse = await connectWallet();
-      const result = await Supplychain.methods.updateStateByDistributor(productId,verificationId, retailerAddress).send({
+      await Supplychain.methods.updateStateByDistributor(productId,verificationId, retailerAddress).send({
         from:  walletResponse.address // Assuming you want to send the transaction from the first account
       });
     } catch (error) {
@@ -49,6 +50,7 @@ const UpdateStateDist= () => {
       </div>
       <button onClick={updateState}>Update State</button>
       {error && <p>Error: {error}</p>}
+      <ApproveVerification />
     </div>
   );
 };

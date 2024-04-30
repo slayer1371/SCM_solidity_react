@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connectWallet,Supplychain } from '../connectmeta';
 import Navigationn from '../../components/navigation';
+import ApproveVerification from './verification';
 
 const UpdateStateManu= () => {
   const [productId, setProductId] = useState('');
@@ -43,6 +44,7 @@ const UpdateStateManu= () => {
       <button onClick={updateState}>Update State</button>
       {transactionHash && <p>Transaction Hash: {transactionHash}</p>}
       {error && <p>Error: {error}</p>}
+      <ApproveVerification />
     </div>
   );
 };

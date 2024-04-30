@@ -2,12 +2,12 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import KitchenSinkExample from "./card";
 import { Container } from "react-bootstrap";
-import products from "../products";
+import products from "../data/products";
 import "../containers/cardgrid.css";
 import NavScrollExample from "./nav";
 
 
-function GridExample() {
+function ProductPage() {
   return (
     <div>
       <NavScrollExample /> 
@@ -24,4 +24,4 @@ function GridExample() {
   );
 }
 
-export default GridExample;
+export default ProductPage;
