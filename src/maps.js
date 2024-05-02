@@ -8,7 +8,7 @@ const mapContainerStyle = {
 
 const Maps = (props) => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyD7p6sCLFKbDbG6IxvKBoV2JeC4kIRmlbg"
+    googleMapsApiKey: process.env.REACT_APP_API
   });
 
   if (loadError) {
@@ -18,6 +18,7 @@ const Maps = (props) => {
   if (!isLoaded) {
     return <div>Loading maps</div>;
   }
+  console.log(process.env.REACT_APP_API);
 
   return (
     <div>

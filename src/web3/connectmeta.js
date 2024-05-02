@@ -1,4 +1,4 @@
-const alchemyKey = "wss://eth-sepolia.g.alchemy.com/v2/xSqqoesGLIv7HYgFeKAtakG1I9P-2RVI";
+const alchemyKey = process.env.REACT_APP_ALCHEMY;
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey); 
 const contractABI = require('./contract-abi.json')
@@ -10,6 +10,7 @@ export const Supplychain = new web3.eth.Contract(
 );
 
 export const connectWallet = async () => {
+  console.log(process.env.REACT_APP_ALCHEMY);
     if (window.ethereum) {
       try {
         const addressArray = await window.ethereum.request({
