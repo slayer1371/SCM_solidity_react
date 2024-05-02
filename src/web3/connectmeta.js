@@ -2,7 +2,7 @@ const alchemyKey = "wss://eth-sepolia.g.alchemy.com/v2/xSqqoesGLIv7HYgFeKAtakG1I
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey); 
 const contractABI = require('./contract-abi.json')
-const contractAddress = "0xdfD2F4330EB79aA760BF4508c2E815b6C0f0e961";
+const contractAddress = "0x480Cc4a484fF60c1F7CB55aCF686256AE10e4056";
 
 export const Supplychain = new web3.eth.Contract(
   contractABI,

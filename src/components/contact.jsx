@@ -151,7 +151,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2024 Supplychain Management Inc. Designed by Mrinal Sharma
+            &copy; 2024 Supplychain Management Inc. Designed with ❤️ by Mrinal Sharma
           </p>
         </div>
       </div>

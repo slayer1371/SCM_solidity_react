@@ -13,6 +13,7 @@ import UpdateStateByDistributor from "./web3/updatestate/distributor";
 import UpdateStateByRetailer from "./web3/updatestate/retailer";
 import ProductPage from "./containers/cardgrid";
 import Metamaskconnect from "./web3/login";
+import Maps from "./maps";
 
 
 const App = () => { 
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/updatestate_distributor" element={<UpdateStateByDistributor />}></Route>
         <Route path="/updatestate_retailer" element={<UpdateStateByRetailer />}></Route>
         <Route path="/updatestate_customer" element={<UpdateStateByCustomer />}></Route>
+        <Route path="/test" element= {<Maps />}></Route>
       </Routes>
     </BrowserRouter>
   );

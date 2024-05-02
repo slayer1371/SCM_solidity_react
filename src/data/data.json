@@ -3,50 +3,28 @@
     "title": "We are Supplychain Management Inc."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
-    ],
-    "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
-    ]
+    "paragraph": "At SCM Inc., we are revolutionizing supply chain management through the power of blockchain technology. Our firm is dedicated to bringing transparency, efficiency, and trust to global supply chains, empowering businesses to thrive in the modern marketplace. By harnessing the decentralized and immutable nature of blockchain, we offer a range of services that streamline processes, mitigate risks, and drive sustainable growth. What sets us apart is our unwavering commitment to excellence and our customer-centric approach. We work closely with each client to understand their unique needs and challenges, tailoring our solutions to deliver maximum value and impact."
   },
   "Services": [
     {
       "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Transparent Tracking and Traceability ",
+      "text": "Utilizing blockchain's immutable ledger, the firm can offer transparent tracking and traceability of products throughout the supply chain."
     },
     {
       "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Smart Contracts for Automated Processes ",
+      "text": "Smart contracts can automate various processes within the supply chain, such as payments, compliance checks, and delivery confirmations."
     },
     {
       "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Provenance Verification",
+      "text": " With blockchain, the firm can offer provenance verification services, allowing customers to verify the origin and authenticity of products, thus combating counterfeit goods and ensuring quality."
     },
     {
       "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Customized Solutions",
+      "text": "The firm can develop customized blockchain-based solutions tailored to the specific needs and challenges of its clients, whether it's in the food industry, pharmaceuticals, manufacturing, or any other sector."
     }
   ],
   "Team": [

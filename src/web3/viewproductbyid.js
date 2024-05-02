@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Supplychain } from './connectmeta';
+import React, { useState, useEffect } from "react";
+import { Supplychain } from "./connectmeta";
 
 const ProductDetails = () => {
-  const [productId, setProductId] = useState('');
+  const [productId, setProductId] = useState("");
   const [productDetails, setProductDetails] = useState(null);
   const [error, setError] = useState(null);
 
@@ -12,12 +12,14 @@ const ProductDetails = () => {
 
   const getProductDetails = async () => {
     try {
-      const result = await Supplychain.methods.viewProductDetailsById(productId).call();
+      const result = await Supplychain.methods
+        .viewProductDetailsById(productId)
+        .call();
       setProductDetails({
         productName: result[0],
         productPrice: result[1],
         productState: result[2],
-        location: result[3]
+        location: result[3],
       });
     } catch (error) {
       setError(error.message);
@@ -25,7 +27,7 @@ const ProductDetails = () => {
   };
 
   useEffect(() => {
-    if (productId !== '') {
+    if (productId !== "") {
       getProductDetails();
     }
   }, [productId]);
@@ -34,8 +36,14 @@ const ProductDetails = () => {
     <div>
       <h2>View Product Details</h2>
       <div>
-        <label htmlFor="productId">Product ID:</label>
-        <input type="text" id="productId" value={productId} onChange={handleProductIdChange} />
+        <input
+          type="text"
+          id="productId"
+          value={productId}
+          onChange={handleProductIdChange}
+          className="text"
+          placeholder="Product ID"
+        />
         <button onClick={getProductDetails}>View Details</button>
       </div>
       {productDetails && (

@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { Supplychain, connectWallet } from '../connectmeta';
+import React, { useState } from "react";
+import { Supplychain, connectWallet } from "../connectmeta";
+import { Button } from "react-bootstrap";
 
 const ApproveVerification = () => {
-  const [verificationId, setVerificationId] = useState('');
+  const [verificationId, setVerificationId] = useState("");
   const [error, setError] = useState(null);
 
   const handleVerificationIdChange = (event) => {
@@ -11,9 +12,9 @@ const ApproveVerification = () => {
 
   const approveVerification = async () => {
     try {
-        const walletResponse = await connectWallet();
+      const walletResponse = await connectWallet();
       await Supplychain.methods.Approve(verificationId).send({
-        from: walletResponse.address // Assuming you want to send the transaction from the first account
+        from: walletResponse.address, // Assuming you want to send the transaction from the first account
       });
     } catch (error) {
       setError(error.message);
@@ -22,12 +23,24 @@ const ApproveVerification = () => {
 
   return (
     <div>
-      <h2>Approve Verification</h2>
+      <h2><u>Verification</u></h2><br />
       <div>
-        <label htmlFor="verificationId">Verification ID:</label>
-        <input type="text" id="verificationId" value={verificationId} onChange={handleVerificationIdChange} />
+        <input
+          type="text"
+          id="verificationId"
+          value={verificationId}
+          onChange={handleVerificationIdChange}
+          className="text"
+          placeholder="Verification Id"
+        />
       </div>
-      <button onClick={approveVerification}>Approve</button>
+      <Button
+        className="btn1"
+        variant="outline-dark"
+        onClick={approveVerification}
+      >
+        Approve Verification
+      </Button>
       {error && <p>Error: {error}</p>}
     </div>
   );

@@ -16,7 +16,7 @@
         "name": "AddDistributor",
         "type": "event"
     },
-    { 
+    {
         "anonymous": false,
         "inputs": [],
         "name": "AddManufacturer",
@@ -190,19 +190,8 @@
         "type": "function"
     },
     {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "_sender",
-                "type": "address"
-            },
-            {
-                "internalType": "address",
-                "name": "_receiver",
-                "type": "address"
-            }
-        ],
-        "name": "createVerifictaionProcess",
+        "inputs": [],
+        "name": "showvId",
         "outputs": [
             {
                 "internalType": "uint256",
@@ -210,14 +199,7 @@
                 "type": "uint256"
             }
         ],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "updateAddress",
-        "outputs": [],
-        "stateMutability": "nonpayable",
+        "stateMutability": "view",
         "type": "function"
     },
     {
@@ -464,11 +446,6 @@
                 "internalType": "string",
                 "name": "",
                 "type": "string"
-            },
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
             }
         ],
         "stateMutability": "view",
@@ -504,21 +481,6 @@
                         "internalType": "string",
                         "name": "location",
                         "type": "string"
-                    },
-                    {
-                        "internalType": "address",
-                        "name": "customer",
-                        "type": "address"
-                    },
-                    {
-                        "internalType": "address",
-                        "name": "retailer",
-                        "type": "address"
-                    },
-                    {
-                        "internalType": "address",
-                        "name": "distributor",
-                        "type": "address"
                     }
                 ],
                 "internalType": "struct Structure.ProductDetails[]",

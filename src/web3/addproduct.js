@@ -32,7 +32,7 @@ function Product() {
     <div>
       <Navigationn />
       <div className="main">
-        <div className="two">
+        <div className ="two">
           <h1>
             <u>ADD PRODUCT <br />(TO BE DONE BY THE MANUFACTURER ONLY)</u>
           </h1>
